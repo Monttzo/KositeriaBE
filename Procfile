@@ -1,1 +1,1 @@
-web: gunicorn kositeriaProject.wsgi
+web: gunicorn wsgi
