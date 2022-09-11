@@ -1,0 +1,8 @@
+django==4.1.1
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.2.0
+psycopg2==2.9.3
+django_filters==22.1
+pandas==1.4.4
+gunicorn==20.1.0
+django-heroku==0.3.1
