@@ -281,9 +281,10 @@ class totalMonthView(generics.RetrieveAPIView):
             'cirWithgastos': cirWithGastos,
             'totalSold': totalSold,
             'totalGastos': totalGastos,
-            'totalWithGastos': totalWithGastos,
-            'totalWithPreviousMonth': totalMonthWithGastosWithPrevious,
-            'totalMonthWithDeudas': totalMonthWithDeudas
+            'totalSoldWithGastos': totalWithGastos,
+            'totalSoldWithPreviousMonth': totalMonthWithGastosWithPrevious,
+            'totalMonthWithDeudas': totalMonthWithDeudas,
+            'totalDeudas': Deudas
         }
         return Response(stringResponse, status=status.HTTP_200_OK)
 
