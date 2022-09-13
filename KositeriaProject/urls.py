@@ -26,6 +26,7 @@ urlpatterns = [
     path('detailUser/<int:pk>/', views.userDetailView.as_view()),
     path('updateUser/<int:user>/<int:pk>/', views.userUpdateView.as_view()),
     path('deleteUser/<int:user>/<int:pk>/', views.userDeleteView.as_view()),
+    path('appModeUser/<username>/', views.appModeDetailView.as_view()),
     #Cajas
     path('createCaja/', views.cajasCreateView.as_view()),
     path('detailCaja/<int:id>/', views.cajasDetailView.as_view()),

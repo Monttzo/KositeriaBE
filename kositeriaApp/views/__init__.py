@@ -3,6 +3,7 @@ from .userCreateView import userCreateView
 from .userDetailView import userDetailView
 from .userUpdateView import userUpdateView
 from .userDeleteView import userDeleteView
+from .userViews import appModeDetailView
 
 from .cajasView import cajasCreateView
 from .cajasView import cajasDetailView
