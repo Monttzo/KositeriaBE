@@ -64,7 +64,7 @@ class cjMensualYearView(generics.RetrieveAPIView):
         year = kwargs['year']
 
         for cajaM in cajaMensual.objects.filter(month__gte=1, month__lte=12, year=year).order_by('month'):
-            stringResponse[str(cajaM.id)] = {
+            stringResponse[str(cajaM.month)] = {
                 'id': cajaM.id,
                 'date': cajaM.date,
                 'month': cajaM.month,
