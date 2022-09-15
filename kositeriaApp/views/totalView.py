@@ -284,7 +284,9 @@ class totalMonthView(generics.RetrieveAPIView):
             'totalSoldWithGastos': totalWithGastos,
             'totalSoldWithPreviousMonth': totalMonthWithGastosWithPrevious,
             'totalMonthWithDeudas': totalMonthWithDeudas,
-            'totalDeudas': Deudas
+            'totalDeudas': Deudas,
+            'initialDate': initDate,
+            'finalDate': finalDate
         }
         return Response(stringResponse, status=status.HTTP_200_OK)
 
